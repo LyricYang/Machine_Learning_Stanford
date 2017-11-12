@@ -92,7 +92,7 @@ while i < abs(length)                                      % while not finished
   if length>0, M = MAX; else M = min(MAX, -length-i); end
   success = 0; limit = -1;                     % initialize quanteties
   while 1
-    while ((f2 > f1+z1*RHO*d1) || (d2 > -SIG*d1)) && (M > 0) 
+    while (((f2 > f1+z1*RHO*d1) || (d2 > -SIG*d1)) && (M > 0)) 
       limit = z1;                                         % tighten the bracket
       if f2 > f1
         z2 = z3 - (0.5*d3*z3*z3)/(d3*z3+f2-f3);                 % quadratic fit
